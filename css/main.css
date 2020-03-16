@@ -13,13 +13,13 @@ html {
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.4rem;
 	overflow-x: hidden;
-	color: var(	--charcoal);
+	color: var(--charcoal);
 }
 
 body {
-  position: relative;
-  width: 100%;
-  overflow-x: hidden;
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 a {
@@ -123,7 +123,7 @@ nav {
 	align-items: center;
 	width: 100vw;
 	height: 90px;
-/*	background-color: var(--charcoal);*/
+	/*	background-color: var(--charcoal);*/
 	background-color: rgb(35, 35, 35);
 	color: var(--link-text);
 	z-index: 100;
@@ -164,7 +164,7 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	margin: 90px auto  0 auto;
+	margin: 90px auto 0 auto;
 	background-color: var(--charcoal);
 	background-image: url(../img/nashville-skyline-lg-12.png);
 	background-repeat: no-repeat;
@@ -175,6 +175,7 @@ nav {
 }
 
 
+/*
 .video {
   position: absolute;
 	align-self: flex-end;
@@ -184,6 +185,7 @@ nav {
 	filter: brightness(.2);
 	z-index: -1;
 }
+*/
 
 .eric {
 	align-self: flex-end;
@@ -273,7 +275,7 @@ nav {
 .types-inspections > div {
 	margin: 0 40px 80px 40px;
 	padding: 60px;
-		-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
 	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
 }
 
@@ -295,7 +297,7 @@ svg {
 	color: var(--text-color);
 }
 
-.faq-section  p {
+.faq-section p {
 	max-width: 500px;
 	text-align: justify;
 	margin-top: -5px;
@@ -304,6 +306,7 @@ svg {
 .q-and-a {
 	padding-bottom: 25px;
 }
+
 footer {
 	display: flex;
 	flex-wrap: wrap;
@@ -332,31 +335,75 @@ footer {
 
 
 @media screen and (max-width: 715px) {
-	
+
 	h1 {
-		font-size: 3.5rem;
+		font-size: 3.3rem;
 	}
-	
+
 	.eric {
 		display: none;
 	}
-	
+
 	.credentials {
 		flex-direction: column;
 	}
-	
+
 	.quote {
 		width: 300px;
 		font-size: 1.4rem;
 	}
-	
-	.faq-section{
+
+	.faq-section {
 		width: 300px;
 		margin: 0 auto;
 	}
-}
+	
+	nav {
+		position: relative;
+	}
 
+	.logo {
+		margin: 0 auto;
+		padding: 0;
+	}
 
-@media screen and (max-width: 675px) {
+	.hero-banner {
+		height: 60vh;
+		margin: 0 auto;
+	}
+	
+	.hero-text {
+		width: 90vw;
+	}
 
+	.nav-links {
+		position: fixed;
+		display; flex;
+		bottom: 0;
+/*		padding: 20px 0;*/
+		background-color: var(--button-color);
+		color: #fff;
+		text-align: center;
+		width: 100vw;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	.nav-links > div {
+		display: flex;
+		border-right: 1px solid #fff;
+		line-height: 1.2rem;
+		padding: 5px 15px;
+		height: 50px;
+		align-items: center;
+	}
+
+	.nav-links > .phone {
+		border-right: none;
+	}
+
+	.phone > a {
+		color: #fff;
+	}
 }
