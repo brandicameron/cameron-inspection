@@ -39,6 +39,14 @@ a {
 	text-align: center;
 }
 
+h1 {
+	text-align: center;
+	color: #fff;
+	font-size: calc(1rem + 3.5vw);
+	font-weight: 700;
+	line-height: 130%;
+}
+
 h2 {
 	font-size: 1.7rem;
 }
@@ -165,22 +173,6 @@ nav {
 	padding-top: 120px;
 }
 
-.hero-text {
-	text-align: center;
-	color: #fff;
-	font-size: calc(1rem + 3.5vw);
-	font-weight: 700;
-	line-height: 130%;
-}
-
-/*
-.feature-word {
-	font-size: calc(1rem + 7vw);
-	font-weight: 700;
-	margin: 4vw 0 5vw 0;
-}
-*/
-
 .eric {
 	align-self: flex-end;
 }
@@ -221,11 +213,11 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
 	padding: 80px;
 }
 
 .realtor > img {
+	-webkit-clip-path: circle(39%);
 	clip-path: circle(39%);
 	margin-bottom: -40px;
 }
@@ -239,19 +231,18 @@ nav {
 .types-inspections {
 	display: flex;
 	flex-wrap: wrap;
-	width: 70vw;
-	justify-content: space-around;
+	max-width: 1200px;
+	justify-content: center;
 	margin: 0 auto;
 	padding: 120px 0 40px 0;
 }
 
 .types-inspections > div {
-	padding-bottom: 80px;
+	margin: 0 70px 80px 70px;
 }
 
 svg {
-	display: flex;
-	justify-content: center;
+	display: block;
 	margin: 0 auto -20px auto;
 }
 
