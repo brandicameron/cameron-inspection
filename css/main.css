@@ -106,7 +106,7 @@ p {
 
 .grow:hover,
 .grow:focus {
-	transform: scale(1.02);
+	transform: scale(1.015);
 }
 
 
@@ -123,8 +123,7 @@ nav {
 	align-items: center;
 	width: 100vw;
 	height: 90px;
-	/*	background-color: var(--charcoal);*/
-	background-color: rgb(35, 35, 35);
+	background-color: var(--charcoal);
 	color: var(--link-text);
 	z-index: 100;
 }
@@ -159,33 +158,40 @@ nav {
 /*     HERO BANNER     */
 
 
+.nashville-banner {
+	position: absolute;
+	top: 90px;
+	background-color: var(--charcoal);
+	width: 100vw;
+	height: 785px;
+	padding-top: 80px;
+	z-index: -1;
+}
+
+.nashville {
+	width: 100vw;
+	padding-top: 157px;
+	opacity: .8;
+	filter: brightness(.4);
+	animation: city 5s linear forwards;
+}
+
+@keyframes city {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
 .hero-banner {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	margin: 90px auto 0 auto;
-	background-color: var(--charcoal);
-	background-image: url(../img/nashville-skyline-lg-12.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom right;
-	background-blend-mode: soft-light;
-	padding-top: 80px;
+	margin: 100px auto 0 auto;
 }
-
-
-/*
-.video {
-  position: absolute;
-	align-self: flex-end;
-  width: 100vw;
-	height: 100%;
-	filter: grayscale();
-	filter: brightness(.2);
-	z-index: -1;
-}
-*/
 
 .eric {
 	align-self: flex-end;
@@ -193,7 +199,7 @@ nav {
 }
 
 .hero-text {
-	margin-top: -150px;
+	margin-top: -100px;
 }
 
 .tagline {
@@ -216,6 +222,7 @@ nav {
 	align-content: center;
 	align-items: center;
 	padding: 30px 0;
+	background-color: #fff;
 }
 
 .credentials > img {
