@@ -1,276 +1,257 @@
-/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+/*     MASTER STYLES     */
 
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+:root {
+	--main-color: #2fb905;
+	--button-color: #267f12;
+	--link-text: #fff;
+	--charcoal: #232323;
+	--bold: 700;
+	--black: 900;
+}
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.4rem;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-color {
+	color: var(--main-color);
+}
+
+.bold {
+	font-weight: var(--bold);
+}
+
+.black {
+	font-weight: var(--black);
+}
+
+.white {
+	color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.7rem;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 1.25rem;
+	max-width: 350px;
+	text-align: left;
+	line-height: 150%;
+}
+
+.quote {
+	max-width: 700px;
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 400;
+	line-height: 160%;
+	text-align: justify;
+}
+
+.quote::before {
+	position: absolute;
+	content: url(../img/quote.png);
+	margin-top: -28px;
+	margin-left: -50px;
+}
+
+.button {
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: .03rem;
+	text-transform: uppercase;
+	background-color: var(--button-color);
+	color: #fff;
+	text-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	padding: 20px 20px;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 80px auto;
+	border-radius: 5px;
+	box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+}
+
+.grow {
+	-moz-osx-font-smoothing: grayscale;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: transform 0.20s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+	transform: scale(1.02);
+}
+
+
+
+
+
+/*     MAIN NAVIGATION     */
+
+nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 90px;
+	background-color: var(--charcoal);
+	color: var(--link-text);
+	z-index: 100;
+}
+
+.logo {
+	display: flex;
+	padding-left: 40px;
+}
+
+.nav-links {
+	display: flex;
+	padding-right: 40px;
+	font-size: 1.2rem;
+}
+
+.nav-links > div {
+	padding: 0 20px;
+}
+
+.phone::before {
+	content: " ";
+	background-image: url(../img/phone.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 11px;
+}
+
+
+
+
+
+/*     HERO BANNER     */
+
+.hero-banner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--charcoal);
+	background-image: url(../img/nashville-skyline-lg-12.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+	background-blend-mode: soft-light;
+	width: 100vw;
+	padding-top: 120px;
+}
+
+.hero-text {
+	text-align: center;
+	color: #fff;
+	font-size: calc(1rem + 3.5vw);
+	font-weight: 700;
+	line-height: 130%;
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.feature-word {
+	font-size: calc(1rem + 7vw);
+	font-weight: 700;
+	margin: 4vw 0 5vw 0;
 }
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
 
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+.eric {
+	align-self: flex-end;
 }
 
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+
+
+/*     CREDENTIALS MINI-SECTION     */
+
+.credentials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	padding: 30px 0;
 }
 
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
+.credentials > img {
+	padding: 0 15px;
 }
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+@media screen and (max-width: 715px) {
+	.credentials {
+		flex-direction: column;
+	}
 }
 
-.clearfix:after {
-  clear: both;
+
+
+
+
+/*     REALTOR SECTION     */
+
+.realtor {
+	background-color: var(--charcoal);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding: 80px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.realtor > img {
+	clip-path: circle(39%);
+	margin-bottom: -40px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+
+
+
+/*     TYPES OF INSPECTIONS OFFERED      */
+
+.types-inspections {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70vw;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding: 120px 0 40px 0;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.types-inspections > div {
+	padding-bottom: 80px;
+}
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+svg {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto -20px auto;
 }
 
