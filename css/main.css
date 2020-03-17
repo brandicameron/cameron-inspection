@@ -151,6 +151,14 @@ nav {
 	padding: 11px;
 }
 
+.mobile-email {
+	display: none;
+}
+
+.mobile-phone {
+	display: none;
+}
+
 
 
 
@@ -266,6 +274,11 @@ nav {
 	padding-bottom: 70px;
 }
 
+.sam-signature {
+	padding-top: 30px;
+	margin-bottom: -20px;
+}
+
 
 
 /*     TYPES OF INSPECTIONS OFFERED      */
@@ -373,6 +386,19 @@ footer {
 		margin: 0 auto;
 		padding: 0;
 	}
+	
+	.nashville-banner {
+	top: 90px;
+	height: 785px;
+	padding-top: 80px;
+}
+
+.nashville {
+	padding-top: 157px;
+	opacity: .8;
+	filter: brightness(.4);
+	animation: city 5s linear forwards;
+}
 
 	.hero-banner {
 		height: 60vh;
@@ -387,7 +413,6 @@ footer {
 		position: fixed;
 		display; flex;
 		bottom: 0;
-/*		padding: 20px 0;*/
 		background-color: var(--button-color);
 		color: #fff;
 		text-align: center;
@@ -395,18 +420,31 @@ footer {
 		justify-content: center;
 		align-content: center;
 		align-items: center;
+		-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	box-shadow: -1px -1px 15px rgb(0, 0, 0, .4);
 	}
 
 	.nav-links > div {
 		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
 		border-right: 1px solid #fff;
 		line-height: 1.2rem;
-		padding: 5px 15px;
+		padding: 8px 15px;
 		height: 50px;
-		align-items: center;
+	}
+	
+		.nav-links > .main-email {
+		display: none;
 	}
 
 	.nav-links > .phone {
+		display: none;
+	}
+	
+	.nav-links > .mobile-phone {
+		display: block;
 		border-right: none;
 	}
 
