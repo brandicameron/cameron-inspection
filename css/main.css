@@ -214,6 +214,7 @@ nav {
 .hero-text {
 	margin-top: -100px;
 }
+/*
 
 .underline {
 	position: relative;
@@ -244,6 +245,7 @@ nav {
     opacity: 1
   }
 }
+*/
 
 .tagline {
 	text-align: center;
@@ -288,6 +290,22 @@ nav {
 	-webkit-clip-path: circle(39%);
 	clip-path: circle(39%);
 	margin-bottom: -15px;
+	opacity: 0;
+}
+
+.slide-in {
+	animation: slide-in .25s ease-out forwards;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateX(-300%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0.1);
+		opacity: 1;
+	}
 }
 
 .quote {
