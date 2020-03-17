@@ -293,7 +293,7 @@ nav {
 	opacity: 0;
 }
 
-.slide-in {
+.slide-in.fancy {
 	animation: slide-in .25s ease-out forwards;
 }
 
@@ -352,6 +352,7 @@ nav {
 	padding: 60px;
 	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
 	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
+	opacity: 0;
 }
 
 svg {
@@ -397,6 +398,26 @@ footer {
 	height: 700px;
 }
 
+
+.delay-100.fancy {
+	animation-delay: 100ms;
+}
+
+.delay-200.fancy {
+	animation-delay: 200ms;
+}
+
+.delay-300.fancy {
+	animation-delay: 300ms;
+}
+
+.delay-400.fancy {
+	animation-delay: 400ms;
+}
+
+.delay-500.fancy {
+	animation-delay: 500ms;
+}
 
 
 

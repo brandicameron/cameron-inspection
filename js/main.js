@@ -32,9 +32,9 @@ function loop() {
 
 	animationTarget.forEach(function (element) {
 		if (isElementInViewport(element)) {
-			element.classList.add('slide-in');
+			element.classList.add('fancy');
 		} else {
-			element.classList.remove('slide-in');
+			element.classList.remove('fancy');
 		}
 	});
 
