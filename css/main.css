@@ -1,7 +1,5 @@
 /*     MASTER STYLES     */
 
-
-
 :root {
 	--main-color: #2fb905;
 	--button-color: #267f12;
@@ -178,7 +176,7 @@ nav {
 
 .nashville {
 	width: 100vw;
-	padding-top: 157px;
+	padding-top: 100px;
 	opacity: .8;
 	filter: brightness(.4);
 	animation: city 5s linear forwards;
@@ -187,9 +185,20 @@ nav {
 @keyframes city {
 	0% {
 		transform: scale(1);
+		transform-origin: right;
 	}
+
 	100% {
 		transform: scale(1.2);
+		transform-origin: right;
+	}
+}
+
+.nashville-mobile {}
+
+@keyframes city-mobile {
+	0% {
+		transform: translateX(10%);
 	}
 }
 
@@ -281,6 +290,8 @@ nav {
 
 
 
+
+
 /*     TYPES OF INSPECTIONS OFFERED      */
 
 .types-inspections {
@@ -345,13 +356,14 @@ footer {
 
 
 
+
+/*     MEDIA      */
+
 @media screen and (max-width: 1100px) {
 	.eric {
 		width: 40%;
 	}
 }
-
-
 
 
 @media screen and (max-width: 715px) {
@@ -377,7 +389,7 @@ footer {
 		width: 300px;
 		margin: 0 auto;
 	}
-	
+
 	nav {
 		position: relative;
 	}
@@ -386,32 +398,46 @@ footer {
 		margin: 0 auto;
 		padding: 0;
 	}
-	
-	.nashville-banner {
-	top: 90px;
-	height: 785px;
-	padding-top: 80px;
-}
 
-.nashville {
-	padding-top: 157px;
-	opacity: .8;
-	filter: brightness(.4);
-	animation: city 5s linear forwards;
-}
+	.nashville-banner {
+		top: 90px;
+		height: 785px;
+		padding-top: 80px;
+	}
+
+	.nashville {
+		display: none;
+	}
+
+	.nashville-mobile {
+		display: block;
+		width: 1000px;
+		margin-top: -250px;
+		margin-left: -355px;
+		padding-top: 0;
+		opacity: .8;
+		filter: brightness(.4);
+		animation: city-mobile 5s linear forwards;
+	}
 
 	.hero-banner {
 		height: 60vh;
 		margin: 0 auto;
 	}
-	
+
 	.hero-text {
 		width: 90vw;
+		margin-top: -35px;
+	}
+
+	.hero-text > h1 {
+		margin-bottom: -40px;
 	}
 
 	.nav-links {
 		position: fixed;
-		display; flex;
+		display;
+		flex;
 		bottom: 0;
 		background-color: var(--button-color);
 		color: #fff;
@@ -421,7 +447,7 @@ footer {
 		align-content: center;
 		align-items: center;
 		-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	box-shadow: -1px -1px 15px rgb(0, 0, 0, .4);
+		box-shadow: -1px -1px 15px rgb(0, 0, 0, .4);
 	}
 
 	.nav-links > div {
@@ -434,15 +460,15 @@ footer {
 		padding: 8px 15px;
 		height: 50px;
 	}
-	
-		.nav-links > .main-email {
+
+	.nav-links > .main-email {
 		display: none;
 	}
 
 	.nav-links > .phone {
 		display: none;
 	}
-	
+
 	.nav-links > .mobile-phone {
 		display: block;
 		border-right: none;
