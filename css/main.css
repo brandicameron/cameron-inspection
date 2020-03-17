@@ -5,6 +5,7 @@
 	--button-color: #267f12;
 	--link-text: #fff;
 	--charcoal: #232323;
+	--gradient: radial-gradient(ellipse at center, #2fb905 0%,#267f12 70%,#267f12 70%);
 }
 
 html {
@@ -81,7 +82,7 @@ p {
 	font-weight: 700;
 	letter-spacing: .03rem;
 	text-transform: uppercase;
-	background-color: var(--button-color);
+	background: var(--gradient);
 	color: #fff;
 	text-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
 	padding: 20px 20px;
@@ -95,16 +96,11 @@ p {
 	box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
 }
 
-.grow {
-	-moz-osx-font-smoothing: grayscale;
-	backface-visibility: hidden;
-	transform: translateZ(0);
-	transition: transform 0.20s ease-out;
-}
-
 .grow:hover,
 .grow:focus {
-	transform: scale(1.015);
+	-webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+	transform: scale(1.010) perspective(1px);
 }
 
 
@@ -179,7 +175,7 @@ nav {
 	padding-top: 100px;
 	opacity: .8;
 	filter: brightness(.4);
-	animation: city 5s linear forwards;
+	animation: city 5s ease-out forwards;
 }
 
 @keyframes city {
@@ -217,6 +213,36 @@ nav {
 
 .hero-text {
 	margin-top: -100px;
+}
+
+.underline {
+	position: relative;
+  height: 4px;
+	width: 248px;
+  background: var(--gradient);
+  margin-top: -3.05em;
+	margin-left: 10px;
+  -webkit-filter: drop-shadow(1px 3px 4px rgb(0, 0, 0, .2));
+  filter: drop-shadow(1px 3px 4px rgb(0, 0, 0, .2));
+  -webkit-animation: underline .09s ease-in forwards;
+  animation: underline .09s ease-in forwards;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  opacity: 0;
+	z-index: -1;
+
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: 248px;
+    opacity: 1
+  }
 }
 
 .tagline {
