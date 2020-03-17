@@ -542,4 +542,8 @@ footer {
 	.phone > a {
 		color: #fff;
 	}
+	
+	.delay-200 {
+		animation-delay: 0;
+	}
 }
