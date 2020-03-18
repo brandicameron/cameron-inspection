@@ -2,10 +2,11 @@
 
 :root {
 	--main-color: #2fb905;
-	--button-color: #267f12;
+	--button-color: #26a30a;
 	--link-text: #fff;
 	--charcoal: #232323;
-	--gradient: radial-gradient(ellipse at center, #2fb905 0%,#267f12 70%,#267f12 70%);
+/*	--gradient: radial-gradient(ellipse at center, #2fb905 0%,#267f12 70%,#267f12 70%);*/
+	--gradient: linear-gradient(to top, #2fb905, #26a30a);
 }
 
 html {
@@ -82,18 +83,19 @@ p {
 	font-weight: 700;
 	letter-spacing: .03rem;
 	text-transform: uppercase;
-	background: var(--gradient);
+	background: var(--button-color);
 	color: #fff;
-	text-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	padding: 20px 20px;
-	max-width: 300px;
+	text-shadow: 4px 3px 12px rgb(0, 0, 0, .2) inset;
+	padding: 15px 20px;
+	max-width: 270px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 80px auto;
+	border: 1px solid #41850e;
 	border-radius: 5px;
 	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	box-shadow: 1px 1px 0px rgb(0, 0, 0, .2);
 }
 
 .grow:hover,
@@ -214,38 +216,6 @@ nav {
 .hero-text {
 	margin-top: -100px;
 }
-/*
-
-.underline {
-	position: relative;
-  height: 4px;
-	width: 248px;
-  background: var(--gradient);
-  margin-top: -3.05em;
-	margin-left: 10px;
-  -webkit-filter: drop-shadow(1px 3px 4px rgb(0, 0, 0, .2));
-  filter: drop-shadow(1px 3px 4px rgb(0, 0, 0, .2));
-  -webkit-animation: underline .09s ease-in forwards;
-  animation: underline .09s ease-in forwards;
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-  opacity: 0;
-	z-index: -1;
-
-}
-
-@keyframes underline {
-  0% {
-    width: 0;
-    opacity: 1;
-  }
-
-  100% {
-    width: 248px;
-    opacity: 1
-  }
-}
-*/
 
 .tagline {
 	text-align: center;
@@ -294,12 +264,12 @@ nav {
 }
 
 .slide-in.fancy {
-	animation: slide-in .25s ease-out forwards;
+	animation: slide-in .3s ease-out forwards;
 }
 
 @keyframes slide-in {
 	0% {
-		transform: translateX(-300%);
+		transform: translateX(-50%);
 		opacity: 0;
 	}
 	100% {
@@ -317,14 +287,31 @@ nav {
 	text-align: justify;
 	margin: -30px auto 0 auto;
 	z-index: 5;
-	background-image: url(../img/quote.png);
+	background-image: url(../img/quote.svg);
 	background-repeat: no-repeat;
 	padding: 30px 0 0 10px;
+	opacity: 0;
+}
+
+.slide-up.fancy {
+	animation: slide-up .30s ease-out forwards;
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(30%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 .sam-quote {
 	padding-top: 160px;
 	padding-bottom: 70px;
+	opacity: 0;
 }
 
 .sam-signature {
@@ -332,6 +319,18 @@ nav {
 	margin-bottom: -20px;
 }
 
+.fade-in.fancy {
+	animation: fade-in .20s ease-out forwards;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 
 
@@ -381,6 +380,7 @@ nav {
 
 .q-and-a {
 	padding-bottom: 25px;
+	opacity: 0;
 }
 
 footer {
