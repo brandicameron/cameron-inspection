@@ -482,7 +482,7 @@ footer {
 		padding-top: 0;
 		opacity: .8;
 		filter: brightness(.4);
-		animation: city-mobile 3s ease-out forwards;
+		animation: city-mobile 4s ease-out forwards;
 	}
 
 	.hero-banner {
