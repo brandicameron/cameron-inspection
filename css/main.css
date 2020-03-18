@@ -548,4 +548,22 @@ footer {
 	.delay-200 {
 		animation-delay: 1ms;
 	}
+	
+	.types-inspections {
+	margin: 0 auto;
+	padding: 90px 10px 30px 10px;
+}
+
+.types-inspections > div {
+	margin: 0 20px 60px 20px;
+	padding: 50px 30px;
+	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
+	opacity: 0;
+}
+	
+	.types-inspections  h4 {
+		text-align: center;
+	}
+	
 }
