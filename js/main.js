@@ -39,6 +39,8 @@ function isElementInViewport(el) {
 
 
 
+const currentYear = new Date().getFullYear();
+    document.getElementById("copyYear").innerHTML = currentYear;
 
 
 

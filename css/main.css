@@ -120,8 +120,8 @@ nav {
 	width: 100vw;
 	height: 90px;
 	background-color: var(--charcoal);
-/*	color: var(--link-text);*/
 	z-index: 100;
+	cursor: pointer;
 }
 
 .logo {
@@ -175,8 +175,6 @@ nav {
 .nashville {
 	width: 100vw;
 	padding-top: 130px;
-/*	opacity: .8;*/
-/*	filter: brightness(.4);*/
 	animation: city 5s ease-out forwards;
 }
 
@@ -320,7 +318,7 @@ nav {
 }
 
 .fade-in.fancy {
-	animation: fade-in .20s ease-out forwards;
+	animation: fade-in .30s ease-out forwards;
 }
 
 @keyframes fade-in {
@@ -388,14 +386,41 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--charcoal);
 	background-image: url(../img/nashville-skyline-lg-15.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom right;
+	background-position: center right;
 	filter: brightness(.7);
 	width: 100vw;
-	height: 700px;
+	height: 250px;
+	font-size: 1.1rem;
+	color: #fff;
+}
+
+.footer-contact {
+	padding: 25px;
+	font-size: 1.6rem;
+	margin-top: -15px;
+}
+
+
+.copyright {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-self: flex-end;
+	padding-bottom: 30px;
+}
+
+
+.copyright div {
+	color: #fff;
+	padding: 10px;
+	opacity: .78;
+}
+
+#copyYear {
+	padding-right: 7px;
 }
 
 
@@ -428,8 +453,30 @@ footer {
 	.eric {
 		width: 40%;
 	}
-}
 
+	.types-inspections {
+		width: 100vw;
+		margin: 50px auto;
+		padding: 90px 10px 30px 10px;
+	}
+
+	.types-inspections > div {
+		width: 250px;
+		margin: 0 30px 60px 30px;
+		padding: 50px 30px;
+		-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+		box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
+		opacity: 0;
+	}
+
+	.types-inspections h4 {
+		text-align: center;
+	}
+	
+	.nav-links > div {
+	padding: 0 10px;
+}
+}
 
 @media screen and (max-width: 715px) {
 
@@ -565,5 +612,21 @@ footer {
 	.types-inspections  h4 {
 		text-align: center;
 	}
+	
+	footer {
+		height: 150px;
+	}
+	
+	.footer-contact {
+		display: none;
+	}
+	
+	.copyright {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	margin-top: -20px;
+}
 	
 }
