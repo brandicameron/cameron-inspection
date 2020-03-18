@@ -215,7 +215,7 @@ nav {
 	margin-top: -100px;
 }
 
-.tagline {
+.note {
 	text-align: center;
 	margin: -65px auto 0 auto;
 	font-weight: 400;
@@ -362,6 +362,7 @@ nav {
 
 /*     FAQ SECTION      */
 
+/*
 .faq-section {
 	display: flex;
 	flex-direction: column;
@@ -384,6 +385,39 @@ nav {
 	padding-bottom: 25px;
 	opacity: 0;
 }
+*/
+
+
+
+
+
+/*     SAMPLE REPORT SECTION      */
+
+.sample-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 90px 0 130px 0;
+}
+
+.sample-section > h4 {
+	opacity: 0;
+}
+
+.pdf-note {
+	font-size: 1rem;
+}
+
+.sample-report-thumb {
+	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
+	margin: 10px 0;
+	opacity: 0;
+}
+
+
+/*     FOOTER SECTION      */
 
 footer {
 	display: flex;
