@@ -120,7 +120,7 @@ nav {
 	width: 100vw;
 	height: 90px;
 	background-color: var(--charcoal);
-	color: var(--link-text);
+/*	color: var(--link-text);*/
 	z-index: 100;
 }
 
@@ -174,9 +174,9 @@ nav {
 
 .nashville {
 	width: 100vw;
-	padding-top: 100px;
-	opacity: .8;
-	filter: brightness(.4);
+	padding-top: 130px;
+/*	opacity: .8;*/
+/*	filter: brightness(.4);*/
 	animation: city 5s ease-out forwards;
 }
 
@@ -481,7 +481,7 @@ footer {
 		margin-left: -470px;
 		padding-top: 0;
 		opacity: .8;
-		filter: brightness(.4);
+		filter: brightness(.9);
 		animation: city-mobile 4s ease-out forwards;
 	}
 
