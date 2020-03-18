@@ -358,6 +358,10 @@ nav {
 }
 
 
+
+
+/*     FAQ SECTION      */
+
 .faq-section {
 	display: flex;
 	flex-direction: column;
@@ -611,6 +615,10 @@ footer {
 	
 	.types-inspections  h4 {
 		text-align: center;
+	}
+	
+	.faq-section {
+		padding: 40px 0;
 	}
 	
 	footer {
