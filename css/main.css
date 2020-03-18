@@ -279,7 +279,7 @@ nav {
 }
 
 .quote {
-	max-width: 700px;
+	max-width: 730px;
 	color: #fff;
 	font-size: 1.7rem;
 	font-weight: 400;
@@ -389,11 +389,11 @@ footer {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--charcoal);
-	background-image: url(../img/nashville-skyline-lg-12.png);
+	background-image: url(../img/nashville-skyline-lg-15.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom right;
-	background-blend-mode: soft-light;
+	filter: brightness(.7);
 	width: 100vw;
 	height: 700px;
 }
