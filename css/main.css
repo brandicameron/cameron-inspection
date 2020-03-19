@@ -348,8 +348,14 @@ nav {
 .types-inspections > div {
 	margin: 0 40px 80px 40px;
 	padding: 60px;
+/*
 	-webkit-box-shadow: 5px 3px 15px #dddcdc;
 	box-shadow: 5px 3px 15px #dddcdc;
+*/
+  -webkit-box-shadow:  27px 27px 62px #bfbfbf, 
+             -27px -27px 62px #ffffff;
+  box-shadow:  27px 27px 62px #bfbfbf, 
+             -27px -27px 62px #ffffff;
 	opacity: 0;
 }
 
@@ -411,8 +417,14 @@ nav {
 }
 
 .sample-report-thumb {
+/*
 	-webkit-box-shadow: 5px 3px 15px #dddcdc;
 	box-shadow: 5px 3px 15px #dddcdc;
+*/
+  -webkit-box-shadow:  27px 27px 62px #bfbfbf, 
+             -27px -27px 62px #ffffff;
+  box-shadow:  27px 27px 62px #bfbfbf, 
+             -27px -27px 62px #ffffff;
 	margin: 10px 0;
 	opacity: 0;
 }
