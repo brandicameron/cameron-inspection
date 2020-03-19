@@ -277,6 +277,23 @@ nav {
 	}
 }
 
+.slide-in-light.fancy {
+	animation: slide-in .3s ease-out forwards;
+}
+
+@keyframes slide-in-light {
+	0% {
+		transform: translateX(-25%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+
 .quote {
 	max-width: 730px;
 	color: #fff;
