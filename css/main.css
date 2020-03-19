@@ -85,7 +85,7 @@ p {
 	text-transform: uppercase;
 	background: var(--button-color);
 	color: #fff;
-	text-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
+	text-shadow: 1px 1px 4px #505050;
 	padding: 15px 20px;
 	max-width: 270px;
 	display: flex;
@@ -94,8 +94,8 @@ p {
 	margin: 80px auto;
 	border: 1px solid #41850e;
 	border-radius: 5px;
-	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	box-shadow: 1px 1px 0px rgb(0, 0, 0, .2);
+	-webkit-box-shadow: 4px 3px 12px #202020;
+	box-shadow: 1px 1px 0px #202020;
 }
 
 .grow:hover,
@@ -154,6 +154,7 @@ nav {
 .mobile-phone {
 	display: none;
 }
+
 
 
 
@@ -218,7 +219,7 @@ nav {
 .note {
 	text-align: center;
 	margin: -65px auto 0 auto;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 	opacity: .5;
 }
@@ -347,8 +348,8 @@ nav {
 .types-inspections > div {
 	margin: 0 40px 80px 40px;
 	padding: 60px;
-	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
+	-webkit-box-shadow: 5px 3px 15px #dddcdc;
+	box-shadow: 5px 3px 15px #dddcdc;
 	opacity: 0;
 }
 
@@ -410,8 +411,8 @@ nav {
 }
 
 .sample-report-thumb {
-	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
+	-webkit-box-shadow: 5px 3px 15px #dddcdc;
+	box-shadow: 5px 3px 15px #dddcdc;
 	margin: 10px 0;
 	opacity: 0;
 }
@@ -437,8 +438,9 @@ footer {
 
 .footer-contact {
 	padding: 25px;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	margin-top: -15px;
+  text-align: center;
 }
 
 
@@ -455,6 +457,7 @@ footer {
 	color: #fff;
 	padding: 10px;
 	opacity: .78;
+  font-weight: 700;
 }
 
 #copyYear {
@@ -502,9 +505,6 @@ footer {
 		width: 250px;
 		margin: 0 30px 60px 30px;
 		padding: 50px 30px;
-		-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-		box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
-		opacity: 0;
 	}
 
 	.types-inspections h4 {
@@ -594,8 +594,8 @@ footer {
 		justify-content: center;
 		align-content: center;
 		align-items: center;
-		-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-		box-shadow: -1px -1px 15px rgb(0, 0, 0, .4);
+		-webkit-box-shadow: 5px 3px 15px #707070;
+	box-shadow: 5px 3px 15px #707070;
 	}
 	
 	.nav-links  a {
@@ -642,24 +642,17 @@ footer {
 .types-inspections > div {
 	margin: 0 20px 60px 20px;
 	padding: 50px 30px;
-	-webkit-box-shadow: 4px 3px 12px rgb(0, 0, 0, .2);
-	box-shadow: 5px 3px 15px rgb(0, 0, 0, .1);
 	opacity: 0;
 }
 	
 	.types-inspections  h4 {
 		text-align: center;
 	}
-	
-	.faq-section {
-		padding: 40px 0;
-	}
-	
+
 	.sample-section {
 	padding: 50px 0 80px 0;
 }
 
-	
 	.sample-report-thumb {
 		width: 275px;
 	}
