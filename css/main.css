@@ -442,10 +442,6 @@ nav {
 }
 
 .sample-report-thumb {
-  /*
-	-webkit-box-shadow: 5px 3px 15px #dddcdc;
-	box-shadow: 5px 3px 15px #dddcdc;
-*/
   -webkit-box-shadow: 27px 27px 62px #bfbfbf,
     -27px -27px 62px #ffffff;
   box-shadow: 27px 27px 62px #bfbfbf,
@@ -649,6 +645,10 @@ footer {
   .delay-200 {
     animation-delay: 1ms;
   }
+  
+  .types-inspections {
+  padding: 90px 0 40px 0;
+}
 
   .types-inspections > div {
     width: 70vw;
