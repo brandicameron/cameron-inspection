@@ -3,6 +3,7 @@
 :root {
 	--main-color: #2fb905;
 	--button-color: #26a30a;
+	--button-color: #26a30a;
 	--link-text: #fff;
 	--charcoal: #232323;
 	--gradient: linear-gradient(to top, #2fb905, #26a30a);
@@ -132,7 +133,7 @@ nav {
 .nav-links {
 	display: flex;
 	padding-right: 40px;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .nav-links > div {
@@ -223,6 +224,8 @@ nav {
 	color: #fff;
 	opacity: .5;
 }
+
+
 
 
 
@@ -327,7 +330,6 @@ nav {
 .sam-quote {
 	padding-top: 160px;
 	padding-bottom: 70px;
-	opacity: 0;
 }
 
 .sam-signature {
@@ -458,7 +460,6 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center right;
-	filter: brightness(.7);
 	width: 100vw;
 	height: 250px;
 	font-size: 1.1rem;
@@ -483,9 +484,8 @@ footer {
 
 
 .copyright div {
-	color: #fff;
 	padding: 10px;
-	opacity: .78;
+	opacity: .5;
   font-weight: 700;
 }
 
