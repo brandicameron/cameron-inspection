@@ -364,7 +364,6 @@ nav {
 .types-inspections {
   display: flex;
   flex-wrap: wrap;
-  /*	max-width: 1600px;*/
   justify-content: center;
   margin: 0 auto;
   text-align: center;
@@ -372,7 +371,7 @@ nav {
 }
 
 .types-inspections > div {
-  margin: 0 30px 60px 30px;
+  margin: 0 2vw 60px 2vw;
   padding: 50px;
   -webkit-box-shadow: 27px 27px 62px #bfbfbf,
     -27px -27px 62px #ffffff;
@@ -531,25 +530,6 @@ footer {
     width: 40%;
   }
 
-  .types-inspections {
-    width: 100vw;
-    margin: 50px auto;
-    padding: 90px 10px 30px 10px;
-  }
-
-  .types-inspections > div {
-    width: 250px;
-    margin: 0 30px 60px 30px;
-    padding: 50px 30px;
-  }
-
-  .types-inspections h4 {
-    text-align: center;
-  }
-
-  .nav-links > div {
-    padding: 0 10px;
-  }
 }
 
 @media screen and (max-width: 715px) {
@@ -670,12 +650,7 @@ footer {
     animation-delay: 1ms;
   }
 
-  .types-inspections {
-    margin: 0 auto;
-  }
-
   .types-inspections > div {
-    margin-left: 0;
     width: 70vw;
     padding: 50px 30px;
     opacity: 0;
