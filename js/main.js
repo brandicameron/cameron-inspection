@@ -9,7 +9,6 @@ let scroll = window.requestAnimationFrame ||
 let animationTarget = document.querySelectorAll('.animate');
 
 function loop() {
-
 	animationTarget.forEach(function (element) {
 		if (isElementInViewport(element)) {
 			element.classList.add('fancy');
@@ -17,7 +16,6 @@ function loop() {
 			element.classList.remove('fancy');
 		}
 	});
-
 	scroll(loop);
 }
 
@@ -45,15 +43,15 @@ const currentYear = new Date().getFullYear();
 
 
 // DID NOT WORK --- BASED ON THIS TUTORIAL: https://alligator.io/js/intersection-observer/
-
+//
 //const images = document.querySelectorAll('.animate');
 //
 //observer = new IntersectionObserver((entries) => {
 //  entries.forEach(entry => {
 //    if (entry.intersectionRatio > 0) {
-//      entry.target.classList.add('slide-in');
+//      entry.target.classList.add('fancy');
 //    } else {
-//      entry.target.classList.remove('slide-in');
+//      entry.target.classList.remove('fancy');
 //    }
 //  });
 //});
