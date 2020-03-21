@@ -1,8 +1,10 @@
 /*     MASTER STYLES     */
 
 :root {
-	--main-color: #2fb905;
-	--button-color: #26a30a;
+	--main-color: #36b54a;
+/*	--main-color: #2fb905;*/
+	--button-color: #1ea333;
+/*	--button-color: #26a30a;*/
 	--charcoal: #232323;
 	--white-text: #f6f6f6;
 	--gradient: linear-gradient(to top, #2fb905, #26a30a);
@@ -175,11 +177,13 @@ nav {
 @keyframes city {
 	0% {
 		transform: scale(1);
+		transform-origin: center;
 		transform-origin: right;
 	}
 
 	100% {
 		transform: scale(1.2);
+		transform-origin: center;
 		transform-origin: right;
 	}
 }
@@ -479,6 +483,58 @@ footer {
 	animation-delay: 500ms;
 }
 
+
+
+
+
+
+.book-container {
+	display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+	flex: 1;
+	background-color: var(--charcoal);
+}
+
+.contact-info {
+	width: 70vw;
+	margin: 160px auto 0 auto;
+}
+
+.contact-info h1 {
+	line-height: 140%;
+}
+
+.highlight {
+	color: var(--main-color);
+	-webkit-box-shadow: 2px 3px 10px #202020;
+	box-shadow: 2px 3px 10px #202020;
+}
+
+.need-know {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	border: 1px solid var(--main-color);
+	min-width: 340px;
+	width: 45vw;
+	height: 100px;
+	padding: 0 30px;
+	margin-top: 20px;
+}
+
+.exc {
+	color: var(--main-color);
+	padding: 0 10px 0 25px;
+}
+
+.know-text {
+	color: var(--white-text);
+	font-size: 1.2rem;
+	width: 400px;
+}
 
 
 
