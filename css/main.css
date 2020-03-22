@@ -81,13 +81,12 @@ p {
 	background: var(--button-color);
 	color: var(--white-text);
 	text-shadow: 1px 1px 4px #505050;
-	padding: 15px 20px;
+	padding: 16px 20px;
 	max-width: 270px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 80px auto;
-	border: 1px solid transparent;
 	border-radius: 5px;
 	-webkit-box-shadow: 4px 3px 12px #202020;
 	box-shadow: 1px 1px 0px #202020;
@@ -97,7 +96,7 @@ p {
 .button:focus {
 	-webkit-transition: all 5s linear forwards;
 	transition: all .2s ease-in-out;
-	border: 1px solid #115f00;
+  box-shadow: inset 1px 1px 2px #303030;
 }
 
 
@@ -409,13 +408,18 @@ nav {
 }
 
 .sample-report-thumb {
-	-webkit-box-shadow: 27px 27px 62px #bfbfbf,
-		-27px -27px 62px #ffffff;
-	box-shadow: 27px 27px 62px #bfbfbf,
-		-27px -27px 62px #ffffff;
-	margin: 10px 0;
-	opacity: 0;
+  -webkit-box-shadow: 27px 27px 62px #bfbfbf,
+    -27px -27px 62px #ffffff;
+  box-shadow: 27px 27px 62px #bfbfbf,
+    -27px -27px 62px #ffffff;
+  margin: 10px 0;
+  opacity: 0;
 }
+
+
+
+
+
 
 
 /*     FOOTER SECTION      */
