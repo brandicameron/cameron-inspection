@@ -237,8 +237,9 @@ nav {
 	background-color: var(--white-text);
 }
 
-.credentials > img {
+.state-seal {
 	padding: 0 15px;
+	mix-blend-mode:  multiply;
 }
 
 
@@ -606,7 +607,7 @@ footer {
 		width: 100vw;
 		border-right: 1px solid #fff;
 		line-height: 1.2rem;
-		height: 70px;
+		height: 80px;
 	}
 
 	.nav-links > .main-email {
