@@ -316,7 +316,7 @@ nav {
 
 @keyframes slide-up {
 	0% {
-		transform: translateY(30%);
+		transform: translateY(50%);
 		opacity: 0;
 	}
 
@@ -368,17 +368,18 @@ nav {
 .types-inspections > div {
 	min-width: 350px;
 	margin: 0 2vw 60px 2vw;
-	padding: 50px;
-	-webkit-box-shadow: 27px 27px 62px #bfbfbf,
-		-27px -27px 62px #ffffff;
-	box-shadow: 27px 27px 62px #bfbfbf,
-		-27px -27px 62px #ffffff;
-	opacity: 0;
+	padding: 50px 50px 40px 50px;
+	border-radius: 5px;
+	-webkit-box-shadow: 8px 8px 30px #cecece,
+		-8px -8px 30px #ffffff;
+	box-shadow: 8px 8px 30px #cecece,
+		-8px -8px 30px #ffffff;
 }
 
 .check {
 	display: block;
-	margin: 0 auto -20px auto;
+	margin: 0 auto;
+	opacity: 0;
 }
 
 .types-inspections > div > p {
