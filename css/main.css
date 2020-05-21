@@ -22,6 +22,9 @@ html {
 body {
 	position: relative;
 	width: 100%;
+	height: 100vh;
+	display: flex;
+  flex-direction: column;
 	overflow-x: hidden;
 }
 
@@ -429,6 +432,7 @@ nav {
 footer {
 	display: flex;
 	flex-wrap: wrap;
+	flex-shrink: 0;
 	justify-content: center;
 	align-items: center;
 	background-image: url(../img/nashville-skyline-lg-15.jpg);
@@ -492,59 +496,43 @@ footer {
 
 
 
+/*     BOOK/CONTACT PAGE      */
 
-
-.book-container {
-	display: flex;
-	flex-direction: column;
-  min-height: 100vh;
-	flex: 1;
+.book-body {
 	background-color: var(--charcoal);
 }
 
-.contact-info {
+.contact-section {
+	flex: 1;
 	width: 70vw;
-	margin: 160px auto 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 150px auto 0 auto;
 }
 
-.contact-info h1 {
-	line-height: 140%;
+.contact-info {
+	text-align: left;
+}
+
+.book-header {
+	margin-bottom: 90px;
+}
+
+.sm-text {
+	font-weight: bold;
+	color: var(--white-text);
 }
 
 .highlight {
 	color: var(--main-color);
-	-webkit-box-shadow: 2px 3px 10px #202020;
-	box-shadow: 2px 3px 10px #202020;
-}
-
-.need-know {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-self: center;
-	border: 1px solid var(--main-color);
-	min-width: 340px;
-	width: 45vw;
-	height: 100px;
-	padding: 0 30px;
-	margin-top: 20px;
-}
-
-.exc {
-	color: var(--main-color);
-	padding: 0 10px 0 25px;
-}
-
-.know-text {
-	color: var(--white-text);
-	font-size: 1.2rem;
-	width: 400px;
+	margin: -20px 0 45px 0;
 }
 
 
 
 /*     MEDIA      */
+
 
 @media screen and (max-width: 1100px) {
 	.eric {
