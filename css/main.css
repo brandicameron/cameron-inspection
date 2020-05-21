@@ -2,9 +2,7 @@
 
 :root {
 	--main-color: #36b54a;
-/*	--main-color: #2fb905;*/
 	--button-color: #1ea333;
-/*	--button-color: #26a30a;*/
 	--charcoal: #232323;
 	--white-text: #f6f6f6;
 	--gradient: linear-gradient(to top, #2fb905, #26a30a);
@@ -426,15 +424,14 @@ nav {
 
 /*     FOOTER SECTION      */
 
+
 footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../img/nashville-skyline-lg-15.jpg);
-	background-repeat: no-repeat;
+	background: url(../img/nashville-skyline-lg-15.jpg) no-repeat center right;
 	background-size: cover;
-	background-position: center right;
 	width: 100vw;
 	height: 250px;
 	font-size: 1.1rem;
@@ -558,11 +555,11 @@ footer {
 
 	.hero-banner {
 		height: 60vh;
-		margin: 40px auto 40px auto;
+		margin: 40px auto 20px auto;
 	}
 
 	.hero-text {
-		margin-top: -45px;
+		margin-top: -70px;
 	}
 
 	.hero-text > h1 {
@@ -661,7 +658,14 @@ footer {
 	.contact-info {
 		width: 290px;
 		word-wrap: break-word;
-		margin-top: -130px;
+		margin-top: -150px;
 		margin-bottom: 20px;
+	}
+	
+	.book-header {
+		position: relative;
+		line-height: 3.75rem;
+		margin-bottom: 70px;
+		z-index: 100;
 	}
 }
