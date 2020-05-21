@@ -548,8 +548,8 @@ footer {
 	}
 
 	.logo {
-		margin: 0 auto;
-		padding: 0;
+		margin: 50px auto 0 auto;
+		padding: 0 0 50px 0;
 	}
 
 	.nashville-mobile {
@@ -563,7 +563,7 @@ footer {
 
 	.hero-banner {
 		height: 60vh;
-		margin: 0 auto;
+		margin: 80px auto 55px auto;
 	}
 
 	.hero-text {
@@ -663,4 +663,9 @@ footer {
 		margin-top: -20px;
 	}
 
+	.contact-info {
+		width: 290px;
+		word-wrap: break-word;
+		margin-top: -100px;
+	}
 }
