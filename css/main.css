@@ -94,7 +94,8 @@ p {
 .button:focus {
 	-webkit-transition: all 5s linear forwards;
 	transition: all .2s ease-in-out;
-  box-shadow: inset 1px 1px 2px #303030;
+  box-shadow: inset 1px 1px 2px #109125;
+	background-color: #16b22e;
 }
 
 
@@ -129,6 +130,10 @@ nav {
 
 .nav-links > div {
 	padding: 0 20px;
+}
+
+.nav-links a:hover {
+	color: #17c532;
 }
 
 .phone::before {
@@ -309,7 +314,7 @@ nav {
 }
 
 .slide-up.fancy {
-	animation: slide-up .30s ease-out forwards;
+	animation: slide-up .3s ease-out forwards;
 }
 
 @keyframes slide-up {
@@ -335,14 +340,13 @@ nav {
 }
 
 .fade-in.fancy {
-	animation: fade-in .30s ease-out forwards;
+	animation: fade-in .3s ease-out forwards;
 }
 
 @keyframes fade-in {
 	0% {
 		opacity: 0;
 	}
-
 	100% {
 		opacity: 1;
 	}
@@ -416,12 +420,6 @@ nav {
   opacity: 0;
 }
 
-
-
-
-
-
-
 /*     FOOTER SECTION      */
 
 
@@ -436,6 +434,10 @@ footer {
 	height: 250px;
 	font-size: 1.1rem;
 	color: var(--white-text);
+}
+
+footer a:hover {
+	color: #17c532;
 }
 
 .footer-contact {

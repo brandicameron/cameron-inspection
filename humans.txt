@@ -9,6 +9,8 @@
 # THANKS
 
 Stack Overflow
+Reddit
+MDN web docs
 
 # TECHNOLOGY COLOPHON
 

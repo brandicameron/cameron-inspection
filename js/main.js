@@ -36,32 +36,6 @@ function isElementInViewport(el) {
 }
 
 
-
+//Updates the year in the copyright automatically
 const currentYear = new Date().getFullYear();
     document.getElementById("copyYear").innerHTML = currentYear;
-
-
-
-// DID NOT WORK --- BASED ON THIS TUTORIAL: https://alligator.io/js/intersection-observer/
-//
-//const images = document.querySelectorAll('.animate');
-//
-//observer = new IntersectionObserver((entries) => {
-//  entries.forEach(entry => {
-//    if (entry.intersectionRatio > 0) {
-//      entry.target.classList.add('fancy');
-//    } else {
-//      entry.target.classList.remove('fancy');
-//    }
-//  });
-//});
-//
-//images.forEach(image => {
-//  observer.observe(image);
-//});
-
-
-
-
-
-
