@@ -715,4 +715,31 @@ footer a:hover {
 		font-size: 2.5rem;
 		text-align: center;
 	}
+	
+	.contact-section {
+	margin: 150px auto 50px auto;
+}
+	
+	.contact-info > h1 {
+		font-size: 2.7rem;
+		line-height: 3.2rem;
+	}
+	
+	.contact-info > h2 {
+		font-size: 2rem;
+	}
+	
+	.contact-info {
+		width: 290px;
+		word-wrap: break-word;
+		margin-top: -160px;
+		margin-bottom: 20px;
+	}
+	
+	.book-header {
+		position: relative;
+		line-height: 3.55rem;
+		margin-bottom: 50px;
+		z-index: 100;
+	}
 }
