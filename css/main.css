@@ -21,6 +21,7 @@ body {
 	position: relative;
 	width: 100%;
 	overflow-x: hidden;
+	height: 100vh;
 }
 
 a {
@@ -189,8 +190,6 @@ nav {
 		transform-origin: right;
 	}
 }
-
-.nashville-mobile {}
 
 @keyframes city-mobile {
 	0% {
@@ -500,17 +499,26 @@ footer a:hover {
   flex-direction: column;
 }
 
-.contact-section {
+.flex-push-section {
 	flex: 1;
 	width: 70vw;
 	display: flex;
 	flex-direction: column;
+	align-self: center;
 	align-items: center;
-	margin: 150px auto 0 auto;
+	margin-top: 100px;
+}
+
+.center-me {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
 .book-header {
-	margin-bottom: 90px;
+	margin-bottom: 50px;
 }
 
 .sm-text {
@@ -520,7 +528,15 @@ footer a:hover {
 
 .highlight {
 	color: var(--main-color);
-	margin: -20px 0 45px 0;
+	margin: -20px 0 20px 0;
+}
+
+.text-404 {
+	width: 90vw;
+}
+.button-404 {
+	margin-top: 20px;
+	width: 200px;
 }
 
 
@@ -656,12 +672,17 @@ footer a:hover {
 		align-self: center;
 		margin-top: -20px;
 	}
+	
+	.flex-push-section {
+		margin-top: -80px;
+	}
 
 	.contact-info {
 		width: 290px;
-		word-wrap: break-word;
-		margin-top: -150px;
-		margin-bottom: 20px;
+	}
+	
+	h2 a {
+		word-break: break-all;
 	}
 	
 	.book-header {
@@ -671,6 +692,7 @@ footer a:hover {
 		z-index: 100;
 	}
 }
+
 
 @media screen and (max-width: 350px) {
 	
@@ -692,6 +714,7 @@ footer a:hover {
 		opacity: .8;
 		animation: city-mobile 4s ease-out forwards;
 	}
+	
 .hero-text > h1 {
 		margin-bottom: -40px;
 	}
@@ -716,8 +739,9 @@ footer a:hover {
 		text-align: center;
 	}
 	
-	.contact-section {
-	margin: 150px auto 50px auto;
+	.flex-push-section {
+		margin-top: 0;
+		margin-bottom: 70px;
 }
 	
 	.contact-info > h1 {
@@ -728,18 +752,10 @@ footer a:hover {
 	.contact-info > h2 {
 		font-size: 2rem;
 	}
-	
-	.contact-info {
-		width: 290px;
-		word-wrap: break-word;
-		margin-top: -160px;
-		margin-bottom: 20px;
-	}
-	
+
 	.book-header {
 		position: relative;
-		line-height: 3.55rem;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		z-index: 100;
 	}
 }
