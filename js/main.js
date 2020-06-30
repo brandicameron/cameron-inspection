@@ -1,6 +1,4 @@
-
-// BASED ON THIS TUTORIAL: https://cssanimation.rocks/scroll-animations/
-
+// Based on this tutorial: https://cssanimation.rocks/scroll-animations/
 let scroll = window.requestAnimationFrame ||
 	function (callback) {
 		window.setTimeout(callback, 1000 / 60)
@@ -22,6 +20,7 @@ function loop() {
 loop();
 
 
+
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
 	var rect = el.getBoundingClientRect();
@@ -36,6 +35,7 @@ function isElementInViewport(el) {
 }
 
 
+
 //Updates the year in the copyright automatically
 const currentYear = new Date().getFullYear();
-    document.getElementById("copyYear").innerHTML = currentYear;
+document.getElementById("copyYear").innerHTML = currentYear;
