@@ -5,7 +5,10 @@
 2020 Redesign of Cameron Home Inspection.   
 
 _See the live site here:_  
-https://cameronhomeinspection.com/
+https://cameronhomeinspection.com/  
+
+_See the working site here:_  
+https://brandicameron.github.io/cameron-inspection/
 
 #  
 
