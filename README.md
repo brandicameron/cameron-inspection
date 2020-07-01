@@ -10,12 +10,13 @@ https://cameronhomeinspection.com/
 #  
 
 ## Author Contact
-Brandi Cameron  
-hello@brandicameron.com
+Brandi Cameron
+<mailto:hello@brandicameron.com>
 
 ## Credits
 
 Special thanks to  
-https://developer.mozilla.org/en-US/  
-http://stackoverflow.com  
-https://cssanimation.rocks
+[Stack Overflow](http://stackoverflow.com)   
+[Reddit](https://www.reddit.com/)  
+[MDN web docs](http://stackoverflow.com)   
+[CSS Animation Rocks](https://cssanimation.rocks)

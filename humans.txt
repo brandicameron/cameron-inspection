@@ -1,16 +1,14 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
 
 # TEAM
 
- Developer: Brandi Cameron
- Contact: hello@brandicameron.com
+ Developer: Brandi Cameron  
+ Contact: <mailto:hello@brandicameron.com>
 
-# THANKS
+# SPECIAL THANKS
 
-Stack Overflow
-Reddit
-MDN web docs
+[Stack Overflow](http://stackoverflow.com)   
+[Reddit](https://www.reddit.com/)  
+[MDN web docs](http://stackoverflow.com)
 
 # TECHNOLOGY COLOPHON
 
