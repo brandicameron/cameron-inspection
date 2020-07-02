@@ -17,6 +17,7 @@ body {
     position: relative;
     width: 100%;
     overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
     height: 100vh;
 }
 a {
@@ -93,7 +94,7 @@ p {
     background-color: #16b22e;
 }
 nav {
-    position: relative;
+    position: fixed;
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
