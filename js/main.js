@@ -109,6 +109,8 @@ function displayRate(e) {
 	}
 	form.reset();
 	yearBuilt.blur(); //to make number keyboard go away
+
+	window.scrollTo(0,0);
 }
 
 const form = document.getElementById('the-form');
