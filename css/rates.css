@@ -193,10 +193,6 @@ button:active {
     font-size: 1.2rem;
   }
 
-  footer {
-    display: none;
-  }
-
   .nav-links {
     display: none;
   }
