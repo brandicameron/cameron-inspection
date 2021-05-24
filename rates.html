@@ -1,79 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CAMERON HOME INSPECTION | Rates</title>
+    <meta
+      name="description"
+      content="Cameron Home Inspection Rate Calculator"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Brandi Cameron | hello@brandicameron.com" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      property="og:image"
+      content="https://cameron-home-inspection.s3.amazonaws.com/cameron-home-inspection-nashville.jpg"
+    />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/rates.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>CAMERON HOME INSPECTION | Rates</title>
-	<meta name="description" content="Cameron Home Inspection Rate Calculator">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Brandi Cameron | hello@brandicameron.com">
-	<meta name="theme-color" content="#ffffff">
-	<meta property="og:image"
-		content="https://cameron-home-inspection.s3.amazonaws.com/cameron-home-inspection-nashville.jpg">
-	<meta property="og:image:type" content="image/jpg">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/rates.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-</head>
+  <body>
+    <!--      MAIN NAVIGATION     -->
 
-<body>
+    <nav>
+      <a class="logo" href="index.html"
+        ><img
+          src="img/cameron-home-inspection-logo.svg"
+          width="188"
+          alt="Cameron Home Inspection Logo"
+      /></a>
+      <div class="nav-links main-color bold">
+        <div role="navigation"><a href="#sample-report">Sample Report</a></div>
+        <div class="main-email" role="navigation">
+          <a
+            href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
+            rel="noopener noreferrer"
+            >Email Us</a
+          >
+        </div>
+        <div class="mobile-email" role="navigation">
+          <a
+            href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
+            rel="noopener noreferrer"
+            ><img src="img/email.svg" width="45" alt=""
+          /></a>
+        </div>
+        <div class="phone" role="navigation">
+          <a href="tel:1-615-516-7066">(615) 516-7066</a>
+        </div>
+        <div class="mobile-phone" role="navigation">
+          <a href="tel:1-615-516-7066"
+            ><img src="img/call.svg" width="30" alt=""
+          /></a>
+        </div>
+      </div>
+    </nav>
 
-	<!--      MAIN NAVIGATION     -->
+    <!--      RATE CALCULATOR     -->
 
-	<nav>
-		<a class="logo" href="index.html"><img src="img/cameron-home-inspection-logo.svg" width="188"
-				alt="Cameron Home Inspection Logo"></a>
-		<div class="nav-links main-color bold">
-			<div role="navigation"><a href="#sample-report">Sample Report</a></div>
-			<div class="main-email" role="navigation"><a
-					href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
-					rel="noopener noreferrer">Email Us</a></div>
-			<div class="mobile-email" role="navigation"><a
-					href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
-					rel="noopener noreferrer"><img src="img/email.svg" width="45" alt=""></a></div>
-			<div class="phone" role="navigation"><a href="tel:1-615-516-7066">(615) 516-7066</a></div>
-			<div class="mobile-phone" role="navigation"><a href="tel:1-615-516-7066"><img src="img/call.svg" width="30"
-						alt=""></a></div>
-		</div>
-	</nav>
+    <main class="flex-push-section">
+      <div class="result">
+        <div id="total" class="flex">$0</div>
+        <div class="data-entered flex">
+          <div class="entered-sqft flex"></div>
+          <div class="entered-year flex"></div>
+        </div>
+      </div>
 
-	<!--      RATE CALCULATOR     -->
+      <form id="the-form">
+        <div class="form-inputs">
+          <input
+            type="tel"
+            id="sqft"
+            autofocus
+            placeholder="Enter Square Footage"
+          />
+          <input type="tel" id="year-built" placeholder="Enter Year Built" />
+        </div>
+        <div class="form-buttons">
+          <button type="submit" id="submit">Calculate</button>
+          <button type="submit" id="resetBtn">Reset</button>
+        </div>
+      </form>
+    </main>
 
-	<main class="flex-push-section">
-		<div class="result">
-			<div id="total" class="flex">$0</div>
-			<div class="data-entered flex">
-				<div class="entered-sqft flex"></div>
-				<div class="entered-year flex"></div>
-			</div>
-		</div>
-
-		<form id="the-form">
-			<div class="form-inputs">
-				<input type="tel" id="sqft" autofocus placeholder="Enter Square Footage" />
-				<input type="tel" id="year-built" placeholder="Enter Year Built" />
-			</div>
-			<div class="form-buttons">
-				<button type="submit" id="submit">Calculate</button>
-				<button type="submit" id="resetBtn">Reset</button>
-			</div>
-		</form>
-	</main>
-
-	<div class="copyright">
-		<div>&copy;<span id="copyYear"></span>Cameron Home Inspection, LLC </div>
-	</div>
-	<script src="js/main.js"></script>
-
-</body>
-
+    <div class="copyright">
+      <div>&copy;<span id="copyYear"></span>Cameron Home Inspection, LLC</div>
+    </div>
+    <script src="js/rates.js"></script>
+  </body>
 </html>
