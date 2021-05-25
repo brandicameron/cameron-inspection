@@ -228,6 +228,7 @@ nav {
   -ms-flex-item-align: end;
   align-self: flex-end;
   margin-right: 20px;
+  height: auto;
 }
 .hero-text {
   margin-top: -100px;
@@ -266,9 +267,6 @@ nav {
   width: 100vw;
   text-align: center;
 }
-/* .no-js .realtor-image {
-      opacity: 1;
-    } */
 .realtor-image {
   -webkit-clip-path: circle(39%);
   clip-path: circle(39%);
@@ -292,17 +290,14 @@ nav {
   padding: 30px 0 0 10px;
   opacity: 1;
 }
-
 .sam-quote {
   padding-top: 160px;
   padding-bottom: 70px;
 }
-
 .sam-signature {
   padding-top: 30px;
   margin-bottom: -20px;
 }
-
 .types-inspections {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +324,6 @@ nav {
   margin: 0 auto;
   opacity: 1;
 }
-
 .types-inspections > div > p {
   max-width: 35vw;
 }
