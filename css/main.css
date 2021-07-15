@@ -397,6 +397,10 @@ footer a:hover {
   align-self: flex-end;
   padding-bottom: 30px;
 }
+
+.copyright a {
+  color: #fff;
+}
 .copyright div {
   padding: 10px;
   opacity: 0.5;
@@ -404,6 +408,12 @@ footer a:hover {
 }
 #copyYear {
   padding-right: 7px;
+}
+
+.bar {
+  background-color: #fff;
+  padding: 0 1px;
+  margin: 0 10px;
 }
 
 .book-body {
@@ -469,6 +479,38 @@ footer a:hover {
 .button-404 {
   margin-top: 20px;
   width: 200px;
+}
+
+.privacy-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px auto;
+}
+
+.privacy-page h1 {
+  color: var(--charcoal);
+  line-height: 100%;
+  font-size: 2.3rem;
+}
+
+.privacy-page h2 {
+  margin-top: 60px;
+}
+
+.privacy-page ul {
+  font-size: 1.25rem;
+  max-width: 700px;
+  text-align: left;
+  line-height: 150%;
+  color: #3b3b3b;
+}
+
+.privacy-page p {
+  max-width: 700px;
+  min-width: 320px;
+  margin: 20px 30px;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -583,7 +625,7 @@ footer a:hover {
     width: 275px;
   }
   footer {
-    height: 150px;
+    height: 250px;
   }
   .footer-contact {
     display: none;
@@ -593,6 +635,10 @@ footer a:hover {
     -ms-grid-row-align: center;
     align-self: center;
     margin-top: -20px;
+    text-align: center;
+  }
+  .bar {
+    display: none;
   }
   .flex-push-section {
     margin-top: -80px;
