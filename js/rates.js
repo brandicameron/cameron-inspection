@@ -79,3 +79,6 @@ submitBtn.addEventListener('click', displayRate);
 resetBtn.addEventListener('click', () => {
   form.reset();
 });
+
+const currentYear = new Date().getFullYear();
+document.getElementById('copyYear').innerHTML = currentYear;
