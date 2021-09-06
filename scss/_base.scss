@@ -1,0 +1,154 @@
+$base-color: #232323;
+$accent-color: #36b54a;
+$button-color: #1ea333;
+$link-hover: #17c532;
+$light-accent: #d0d0d2;
+$paragraph-text-color: #3b3b3b;
+$white: #f6f6f6;
+$gradient: linear-gradient(to top, $link-hover, $accent-color);
+$bold: 700;
+
+// Utilities
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: $bold;
+}
+
+.section-padding {
+  padding: 100px 0 120px 0;
+}
+
+.mobile-break {
+  display: none;
+}
+
+.center-content {
+  @extend .flex;
+}
+
+// Mixins
+
+@mixin tablet-media-query {
+  @media screen and (max-width: 920px) {
+    @content;
+  }
+}
+
+@mixin phone-media-query {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin phone-landscape-media-query {
+  @media screen and (max-height: 400px) {
+    @content;
+  }
+}
+
+// Base
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.4rem;
+  color: $base-color;
+  background-color: $white;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  font-size: 20px;
+}
+
+main {
+  position: relative;
+  //footer push for short pages
+  flex: 1;
+  //accounts for fixed navigation height
+  top: 90px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+  font-weight: $bold;
+}
+
+a:hover {
+  color: $link-hover;
+}
+
+h1 {
+  // font-size: calc(32px + (70 - 36) * ((100vw - 350px) / (2000 - 300)));
+  font-size: clamp(2.5rem, 3.3vw, 4rem);
+  text-align: center;
+  font-weight: $bold;
+  line-height: 130%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.25rem;
+  max-width: 350px;
+  text-align: left;
+  line-height: 150%;
+  color: $paragraph-text-color;
+}
+
+.button {
+  @extend .flex;
+  font-weight: $bold;
+  text-transform: uppercase;
+  background: $button-color;
+  color: $white;
+  text-shadow: 1px 1px 4px #505050;
+  padding: 20px;
+  max-width: 250px;
+  margin: 60px auto 0 auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 #202020;
+}
+
+.button:focus,
+.button:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 1px 1px 2px #109125;
+  background-color: $link-hover;
+  color: $white;
+}
+
+@include phone-media-query {
+  .mobile-break {
+    display: block;
+  }
+}

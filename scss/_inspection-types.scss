@@ -1,0 +1,32 @@
+.types-inspections {
+  @extend .flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.types-inspections > li {
+  margin-bottom: 80px;
+  padding: 0 30px;
+}
+
+.types-inspections > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.types-inspections h2 {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.types-inspections > li > p {
+  margin: 0 auto;
+}
+.check {
+  display: block;
+  margin: 0 auto;
+  opacity: 1;
+}

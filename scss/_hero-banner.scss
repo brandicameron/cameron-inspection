@@ -1,0 +1,90 @@
+.hero-banner {
+  @extend .flex;
+  position: relative;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+
+.image-container {
+  position: absolute;
+  background-color: $base-color;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.nashville {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  animation: city 5s ease-out forwards;
+  will-change: transform;
+}
+
+@keyframes city {
+  0% {
+    transform: scale(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scale(1.2);
+    transform-origin: right;
+  }
+}
+
+.eric-container {
+  @extend .flex;
+  height: 100%;
+}
+
+.eric {
+  margin-right: 30px;
+  height: 100%;
+  width: auto;
+  max-height: 1100px;
+  object-fit: cover;
+  align-self: flex-end;
+}
+
+.banner-text {
+  margin-top: -100px;
+  color: $white;
+}
+
+.note {
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px auto 0 auto;
+  color: $white;
+  opacity: 0.7;
+}
+
+@include tablet-media-query {
+  .hero-banner {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+}
+
+@include phone-media-query {
+  .hero-banner {
+    position: relative;
+    height: calc(100vh - 30vh);
+    overflow: hidden;
+  }
+
+  .eric-container {
+    display: none;
+  }
+}
+
+@include phone-landscape-media-query {
+  .hero-banner {
+    height: 110vh;
+  }
+
+  .eric-container {
+    display: none;
+  }
+}

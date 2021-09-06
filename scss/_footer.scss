@@ -1,0 +1,62 @@
+footer {
+  @extend .flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: url(../img/nashville-skyline-lg-15.jpg) no-repeat center right;
+  background-size: cover;
+  height: 250px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-contact {
+  @extend .flex;
+  height: 20px;
+  opacity: 0.7;
+}
+
+.footer-contact li {
+  padding: 15px;
+}
+
+.footer-contact li a {
+  color: $white;
+}
+
+.copyright-section a {
+  color: $white;
+}
+
+.copyright-section {
+  @extend .bold;
+  color: $white;
+  opacity: 0.7;
+}
+
+.copyright-text {
+  margin-top: 10px;
+}
+
+#copyYear {
+  padding-right: 7px;
+}
+
+.bar {
+  background-color: #fff;
+  padding: 0 1px;
+  margin: 0 10px;
+}
+
+@include phone-media-query {
+  footer {
+    padding: 0 0 calc(40px + env(safe-area-inset-bottom)) 0;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .copyright-text {
+    line-height: 160%;
+  }
+}
