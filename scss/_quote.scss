@@ -3,6 +3,7 @@
   flex-direction: column;
   background-color: $base-color;
 }
+
 .realtor-image {
   clip-path: circle(39%);
 }
@@ -21,4 +22,10 @@
 .sam-signature {
   padding-top: 15px;
   margin-bottom: -20px;
+}
+
+@include phone-media-query {
+  .realtor-image {
+    margin-top: -3rem;
+  }
 }

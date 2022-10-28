@@ -79,6 +79,12 @@
   }
 }
 
+@include small-phone-media-query {
+  .banner-text {
+    transform: scale(0.85);
+  }
+}
+
 @include phone-landscape-media-query {
   .hero-banner {
     height: 110vh;

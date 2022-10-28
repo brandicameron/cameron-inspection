@@ -25,8 +25,26 @@
 .types-inspections > li > p {
   margin: 0 auto;
 }
+
+.types-inspections > li:last-of-type > h2:last-of-type {
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.types-inspections > li:last-of-type > p:last-of-type {
+  margin: 0 auto;
+  max-width: 70ch;
+}
+
 .check {
   display: block;
   margin: 0 auto;
   opacity: 1;
+}
+
+@include tablet-media-query {
+  .types-inspections > li > p {
+    margin: 0 auto;
+    max-width: 60ch;
+  }
 }
