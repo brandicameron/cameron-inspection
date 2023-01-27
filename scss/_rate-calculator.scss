@@ -2,6 +2,10 @@
   @extend .flex;
 }
 
+.rate-main {
+  background-color: $white;
+}
+
 .result {
   position: relative;
   width: 100vw;
@@ -106,8 +110,7 @@ button:active {
 
 #total {
   opacity: 0;
-  animation: slide-down-bounce 0.8s cubic-bezier(0.28, 0.84, 0.42, 1) 0.5s
-    forwards;
+  animation: slide-down-bounce 0.8s cubic-bezier(0.28, 0.84, 0.42, 1) 0.5s forwards;
 }
 
 @keyframes slide-down-bounce {

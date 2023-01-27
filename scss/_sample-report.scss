@@ -1,23 +1,24 @@
 .sample-section {
   @extend .flex;
   flex-direction: column;
+  gap: 2rem;
+  background-color: $white;
 }
 
 .pdf-note {
+  display: block;
   font-size: 1rem;
   text-align: center;
+  font-weight: normal;
 }
 
 .sample-report-thumb {
   box-shadow: 27px 27px 62px #bfbfbf, -27px -27px 62px #fff;
-  margin: 25px 0;
-  opacity: 1;
-  width: 100%;
-  height: auto;
 }
 
 @include phone-media-query {
   .sample-report-thumb {
     width: 275px;
+    height: auto;
   }
 }

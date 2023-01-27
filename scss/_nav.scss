@@ -1,27 +1,17 @@
-nav {
+header {
   position: fixed;
-  width: 100vw;
-  height: 90px;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: $header-height;
   background-color: $base-color;
   z-index: 100;
-}
-
-.skip-to-content-link {
-  position: absolute;
-  margin: 10px;
-  transform: translateY(-500%);
-}
-
-.skip-to-content-link:focus {
-  transform: translateY(0%);
 }
 
 .nav-content {
   @extend .flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 95vw;
-  height: 85px;
+  margin: 0 1.5rem;
 }
 
 .nav-links {
@@ -44,7 +34,7 @@ nav {
 }
 
 @include phone-media-query {
-  nav {
+  header {
     position: absolute;
   }
   .logo {
@@ -57,6 +47,7 @@ nav {
     left: 0;
     padding: 10px 0;
     margin: 0;
+    max-width: unset;
     background-color: $accent-color;
     box-shadow: 5px 3px 15px #707070;
     a {

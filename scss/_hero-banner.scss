@@ -1,31 +1,29 @@
 .hero-banner {
-  @extend .flex;
   position: relative;
-  height: calc(100vh - 90px);
+  @extend .flex;
+  gap: 3rem;
+  height: calc(100vh - $header-height);
   overflow: hidden;
 }
 
 .image-container {
   position: absolute;
-  background-color: $base-color;
   width: 100vw;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .nashville {
   width: 100vw;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
+  transform-origin: right;
   animation: city 5s ease-out forwards;
   will-change: transform;
 }
 
 @keyframes city {
-  0% {
-    transform: scale(1);
-    transform-origin: right;
-  }
   100% {
     transform: scale(1.2);
     transform-origin: right;
@@ -35,10 +33,10 @@
 .eric-container {
   @extend .flex;
   height: 100%;
+  z-index: 2;
 }
 
 .eric {
-  margin-right: 30px;
   height: 100%;
   width: auto;
   max-height: 1100px;
@@ -47,31 +45,34 @@
 }
 
 .banner-text {
-  margin-top: -100px;
+  margin-top: -5rem;
   color: $white;
+  z-index: 2;
 }
 
 .note {
+  display: block;
   font-size: 1rem;
   text-align: center;
-  margin: 15px auto 0 auto;
-  color: $white;
+  margin-top: 15px;
   opacity: 0.7;
 }
 
 @include tablet-media-query {
   .hero-banner {
-    position: relative;
     height: 50vh;
-    overflow: hidden;
+  }
+
+  .banner-text {
+    margin-top: 0;
+    color: $white;
+    z-index: 2;
   }
 }
 
 @include phone-media-query {
   .hero-banner {
-    position: relative;
-    height: calc(100vh - 30vh);
-    overflow: hidden;
+    height: calc(100vh - 34vh);
   }
 
   .eric-container {
@@ -80,6 +81,10 @@
 }
 
 @include small-phone-media-query {
+  .hero-banner {
+    height: calc(100vh - 41vh);
+  }
+
   .banner-text {
     transform: scale(0.85);
   }

@@ -27,16 +27,16 @@
 <body>
   <!--      MAIN NAVIGATION     -->
 
-  <nav>
-    <div class="nav-content">
+  <header>
+    <nav class="nav-content">
       <a class="logo" href="/index.html"><img src="/img/cameron-home-inspection-logo.svg" width="185" height="40"
           alt="Cameron Home Inspection Logo" aria-label="Logo, click to go back home." /></a>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!--      RATE CALCULATOR     -->
 
-  <main>
+  <main class="rate-main">
     <div class="result">
       <div id="total" class="flex">$0</div>
       <div class="data-entered flex">
@@ -70,13 +70,13 @@
       </li>
     </ul>
 
-    <div class="copyright-section">
-      <div class="copyright-text">
-        &copy;<span id="copyYear"></span>Cameron Home Inspection, LLC
-        <span class="bar"></span><span><a href="/privacy">Privacy Policy</a></span>
-      </div>
-    </div>
+    <small class="copyright-text">
+      &copy;
+      <span id="copyYear"></span>Cameron Home Inspection, LLC
+      <span class="privacy"><a href="privacy">Privacy Policy</a></span>
+    </small>
   </footer>
+
   <script src="/js/rates.js"></script>
 </body>
 

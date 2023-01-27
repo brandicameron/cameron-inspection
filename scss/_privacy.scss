@@ -1,5 +1,11 @@
+.privacy-page {
+  background-color: $white;
+}
+
 .privacy-content {
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-top: $header-height;
+  padding: 5rem 0;
 }
 
 .privacy-content h1 {

@@ -27,9 +27,8 @@
 <body class="book-body">
   <!--      MAIN NAVIGATION     -->
 
-  <nav>
-    <a class="skip-to-content-link button" href="#skip-target">Skip to content</a>
-    <div class="nav-content">
+  <header>
+    <nav class="nav-content">
       <a class="logo" href="/index.html"><img src="/img/cameron-home-inspection-logo.svg" width="185" height="40"
           alt="Cameron Home Inspection Logo" aria-label="Logo, click to go back home." /></a>
       <ul class="nav-links">
@@ -37,17 +36,17 @@
           <a href="/index.html#sample-report">Sample Report</a>
         </li>
         <li class="email">
-          <a href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
-            rel="noopener noreferrer"><img class="mobile-icon" src="/img/email.svg" width="46" height="32"
-              alt="" /><span class="nav-text">Email Us</span></a>
+          <a href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question" rel="noopener noreferrer"
+            aria-label="Email us at eric@cameronhomeinspection.com"><img class="mobile-icon" src="/img/email.svg"
+              width="46" height="32" alt="" /><span class="nav-text">Email Us</span></a>
         </li>
         <li class="phone">
           <a href="tel:1-615-516-7066" aria-label="Give us a call at (615) 516-7066"><img class="mobile-icon"
               src="/img/call.svg" width="28" height="49" alt="" /><span class="nav-text">(615) 516-7066</span></a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!--      CONTENT     -->
 
@@ -78,12 +77,11 @@
       </li>
     </ul>
 
-    <div class="copyright-section">
-      <div class="copyright-text">
-        &copy;<span id="copyYear"></span>Cameron Home Inspection, LLC
-        <span class="bar"></span><span><a href="/privacy">Privacy Policy</a></span>
-      </div>
-    </div>
+    <small class="copyright-text">
+      &copy;
+      <span id="copyYear"></span>Cameron Home Inspection, LLC
+      <span class="privacy"><a href="privacy">Privacy Policy</a></span>
+    </small>
   </footer>
 
   <script src="/js/main.js"></script>
