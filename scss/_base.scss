@@ -7,7 +7,7 @@ $paragraph-text-color: #3b3b3b;
 $white: #f6f6f6;
 $gradient: linear-gradient(to top, $link-hover, $accent-color);
 $bold: 700;
-$header-height: 90px;
+$header-height: 95px;
 
 // Utilities
 
@@ -48,13 +48,13 @@ $header-height: 90px;
 // Mixins
 
 @mixin tablet-media-query {
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 1090px) {
     @content;
   }
 }
 
 @mixin phone-media-query {
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 780px) {
     @content;
   }
 }
@@ -151,12 +151,13 @@ p {
   margin: 60px auto 0 auto;
   border-radius: 5px;
   box-shadow: 1px 1px 0 #202020;
+  white-space: nowrap;
 }
 
 .button:focus,
 .button:hover {
   transition: all 0.2s ease-in-out;
-  box-shadow: inset 1px 1px 2px #109125;
+  box-shadow: inset 0px 0px 10px #109125;
   background-color: $link-hover;
   color: $white;
 }
@@ -165,4 +166,36 @@ p {
   .mobile-break {
     display: block;
   }
+}
+
+.border-top,
+.border-bottom {
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  background-color: $accent-color;
+  z-index: 1000;
+}
+
+.border-left,
+.border-right {
+  position: fixed;
+  width: 5px;
+  height: 100%;
+  background-color: $accent-color;
+  z-index: 1000;
+}
+
+.border-left {
+  top: 0;
+  left: 0;
+}
+.border-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.border-right {
+  top: 0;
+  right: 0;
 }

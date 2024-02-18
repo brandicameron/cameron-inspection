@@ -5,13 +5,14 @@ header {
   width: 100%;
   height: $header-height;
   background-color: $base-color;
+  opacity: 0.98;
   z-index: 100;
 }
 
 .nav-content {
   @extend .flex;
   justify-content: space-between;
-  margin: 0 1.5rem;
+  margin: 2rem;
 }
 
 .nav-links {

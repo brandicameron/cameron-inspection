@@ -4,51 +4,52 @@ const form = document.getElementById('the-form');
 let submitBtn = document.getElementById('submit');
 let resetBtn = document.getElementById('resetBtn');
 
-function calculateRate(size, year) {
+function calculateRate(sqFtRate, year) {
   let sqft = document.getElementById('sqft');
+  const increment = 25;
 
   // minimum inspection rate
-  size = 375;
+  sqFtRate = 400;
 
-  if (sqft.value < 999) {
-    size = size;
-  } else if (sqft.value < 1500) {
-    size = size + 25;
+  if (sqft.value < 1500) {
+    sqFtRate = sqFtRate;
   } else if (sqft.value < 2000) {
-    size = size + 50;
+    sqFtRate = sqFtRate + increment;
   } else if (sqft.value < 2500) {
-    size = size + 75;
+    sqFtRate = sqFtRate + increment * 2;
   } else if (sqft.value < 3000) {
-    size = size + 100;
+    sqFtRate = sqFtRate + increment * 3;
   } else if (sqft.value < 3500) {
-    size = size + 125;
+    sqFtRate = sqFtRate + increment * 4;
   } else if (sqft.value < 4000) {
-    size = size + 150;
+    sqFtRate = sqFtRate + increment * 5;
   } else if (sqft.value < 4500) {
-    size = size + 175;
+    sqFtRate = sqFtRate + increment * 6;
   } else if (sqft.value < 5000) {
-    size = size + 200;
+    sqFtRate = sqFtRate + increment * 7;
   } else if (sqft.value < 5500) {
-    size = size + 225;
+    sqFtRate = sqFtRate + increment * 8;
   } else if (sqft.value <= 5999) {
-    size = size + 250;
+    sqFtRate = sqFtRate + increment * 9;
   } else if (sqft.value >= 6000) {
-    size = Math.round(sqft.value * 0.11);
+    sqFtRate = Math.round(sqft.value * 0.13);
   }
 
-  if (yearBuilt.value === '' || yearBuilt.value >= 2000) {
+  if (yearBuilt.value === '' || yearBuilt.value >= 2020) {
     year = 0;
     // anything before 1919 is handled below in display rate function
   } else if (yearBuilt.value <= 1939) {
-    year = 100;
+    year = increment * 5;
   } else if (yearBuilt.value <= 1959) {
-    year = 75;
+    year = increment * 4;
   } else if (yearBuilt.value <= 1979) {
-    year = 50;
+    year = increment * 3;
   } else if (yearBuilt.value <= 1999) {
-    year = 25;
+    year = increment * 2;
+  } else if (yearBuilt.value <= 2019) {
+    year = increment;
   }
-  totalPrice = size + year;
+  totalPrice = sqFtRate + year;
 }
 
 function displayRate(e) {
