@@ -11,6 +11,7 @@ footer {
 
 .footer-contact {
   @extend .flex;
+  flex-wrap: wrap;
   gap: 2rem;
   opacity: 0.7;
 }
@@ -24,6 +25,7 @@ footer {
   @extend .bold;
   color: $white;
   opacity: 0.7;
+  padding-inline: 2.5rem;
 }
 
 .copyright-text a {
@@ -44,6 +46,10 @@ footer {
 @include phone-media-query {
   footer {
     padding: 0 0 calc(40px + env(safe-area-inset-bottom)) 0;
+  }
+
+  .footer-contact {
+    gap: 0.75rem;
   }
 
   .privacy::before {

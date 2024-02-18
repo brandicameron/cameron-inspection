@@ -2,6 +2,10 @@
   @extend .flex;
 }
 
+header {
+  padding-bottom: 1rem;
+}
+
 .rate-main {
   background-color: $white;
 }
@@ -10,7 +14,7 @@
   position: relative;
   width: 100vw;
   height: 200px;
-  top: -15px;
+  top: 0.75rem;
 }
 
 #total {
@@ -39,14 +43,14 @@
 
 .entered-sqft::before {
   content: 'Sq Footage:';
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-right: 8px;
   opacity: 0.6;
 }
 
 .entered-year::before {
   content: 'Year Built:';
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-right: 8px;
   opacity: 0.6;
 }
@@ -92,6 +96,16 @@ button:hover {
 
 button:active {
   transform: scale(0.98);
+}
+
+.calculate-btn {
+  background-color: $button-color;
+}
+
+.calculate-btn:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0px 0px 10px #109125;
+  background-color: $link-hover;
 }
 
 .result,

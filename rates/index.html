@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>CAMERON HOME INSPECTION | Rates</title>
-  <meta name="description" content="Cameron Home Inspection Rate Calculator" />
+  <title>Cameron Home Inspection | Rates</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Brandi Cameron | hello@brandicameron.com" />
   <meta name="theme-color" content="#ffffff" />
@@ -29,7 +28,7 @@
 
   <header>
     <nav class="nav-content">
-      <a class="logo" href="/index.html"><img src="/img/cameron-home-inspection-logo.svg" width="185" height="40"
+      <a class="logo" href="/index.html"><img src="/img/cameron-home-inspection-logo.svg" width="225" height="49"
           alt="Cameron Home Inspection Logo" aria-label="Logo, click to go back home." /></a>
     </nav>
   </header>
@@ -51,7 +50,7 @@
         <input type="tel" id="year-built" placeholder="Enter Year Built" />
       </div>
       <div class="form-buttons">
-        <button type="submit" id="submit">Calculate</button>
+        <button class="calculate-btn" type="submit" id="submit">Calculate</button>
         <button type="submit" id="resetBtn">Reset</button>
       </div>
     </form>
@@ -62,21 +61,27 @@
   <footer>
     <ul class="footer-contact">
       <li>
-        <a href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
-          rel="noopener noreferrer">Email Us</a>
+        <a href="tel:1-615-516-7066" aria-label="Give us a call at (615) 516-7066">(615) 516-7066</a>
       </li>
       <li>
-        <a href="tel:1-615-516-7066" aria-label="Give us a call at (615) 516-7066">(615) 516-7066</a>
+        <a href="mailto:eric@cameronhomeinspection.com?subject=Home%20Inspection%20Question"
+          rel="noopener noreferrer">eric@cameronhomeinspection.com</a>
       </li>
     </ul>
 
     <small class="copyright-text">
       &copy;
       <span id="copyYear"></span>Cameron Home Inspection, LLC
-      <span class="privacy"><a href="https://cameronhomeinspection.com/privacy/">Privacy Policy</a></span>
+      <span class="privacy"><a href="privacy">Privacy Policy</a></span>
     </small>
   </footer>
 
+  <div class="border-top"></div>
+  <div class="border-left"></div>
+  <div class="border-right"></div>
+  <div class="border-bottom"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
   <script src="/js/rates.js"></script>
 </body>
 
