@@ -199,3 +199,12 @@ p {
   top: 0;
   right: 0;
 }
+
+@include phone-media-query {
+  .border-top,
+  .border-bottom,
+  .border-left,
+  .border-right {
+    display: none;
+  }
+}
