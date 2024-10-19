@@ -54,6 +54,30 @@
   z-index: 2;
 }
 
+.closed-banner {
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  margin-top: -10rem;
+
+  .closed-heading {
+    color: $white;
+    font-size: 5rem;
+  }
+
+  .closed-text {
+    color: $white;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .closed-thanks {
+    color: $white;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
 .tag-line {
   text-wrap: balance;
   max-width: 20ch;
